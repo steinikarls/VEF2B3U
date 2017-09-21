@@ -1,0 +1,53 @@
+1.	ECMA Script er skrifmál sem er staðlað af Ecma Internaional. Það er aðallega notað í skriftum sem keyra á miðlara. 
+Saga ECMA Script byrjar með því að Netscape þróaði javascript sem fyrir vafra sem kom  út í mars 1996. 
+Sama ár þróaði Microsoft sitt eigið tungumál Jscript  sem kom út me IE 3.0. 
+seinna á árinnu óskaði Netscape eftir að Ecma myndi vera grunnur sem fólk myndi vinna me og þar byrjaði það.
+
+2.	Vegna þess að þú þarft ekki að skilgreina tegund fyrir þitt variable eins og þú myndir gera fyrir önnur tungumáls. 
+Þegar þú setur gildi fyrir variable í Javascript,  þá læturu engine finna út úr tegunnd sem sett var í.
+
+3.	Það er engin munur. 
+
+4.	 Undefined means a variable has been declared but has not yet been assigned a value, null is an assignment value. 
+It can be assigned to a variable as a representation of no value.
+
+5.	== is just comparing 2 values and if they are of different types, type conversion Is done,
+=== compares the values and well as their types -so no conversion will be done.
+
+6.	 A variable defined using a var statement is known throughout the function it is defined in, from the moment it is defined onward.
+A variable defined using a let statement is only known in the block it is defined in, from the moment it is defined onward.
+7.	Function Declaration 
+function add(a, b) {
+    return a + b;
+}
+Hérna ertu að declare function og getur verið hoisted
+
+Function Expression 
+var add = function(a, b) {
+    return a + b;
+};
+Hérna ert að declare function fyrir variable p.s þarf að vera semikomma í endann :D og getur ekki verið hoisted 
+
+Arrow function 
+var add = (a, b) => a + b;
+þetta kom út í ecmascript 2015 og þetta hagar sér eins og function expression, getur ekki verið hoisted
+
+8.	Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function,
+in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions.
+
+9.	Vegna þess að x(); kallar á function sem mun keyra það
+
+10.	Talan 8 kemur til baka. Það sem gerist era ð alert(foo()); byrjar og keyrir functionið sem return bar();
+sem kallar fallið fyrir neðan sem skilar 8 í alert. Fyrra bar er skippað.
+
+11.	Fæ undefined í bæði skiptin með let og var 
+
+12.	Þetta er óskilgrein function sem keyrir í gang straxs þegar síðan byrjar, ef það er ekki svigi þá þarf nafn á function
+
+13.	When you declare a variable outside of any function, it is called a global variable,
+because it is available to any other code in the current document. When you declare a variable within a function,
+it is called a local variable, because it is available only within that function.
+
+14.	A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser)
+to keep track of its place in a script that calls multiple functions — what function is currently being run,
+what functions are called from within that function and should be called next, etc.
